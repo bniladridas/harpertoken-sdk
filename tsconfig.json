@@ -1,9 +1,9 @@
 {
-  "include": ["src", "tests", "examples"],
+  "include": ["src", "examples"],
   "exclude": [],
   "compilerOptions": {
     "target": "es2020",
-    "lib": ["es2020"],
+    "lib": ["es2020", "dom", "dom.iterable"],
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -28,6 +28,7 @@
     "alwaysStrict": true,
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
+    "types": ["jest", "node"],
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "isolatedModules": false,
