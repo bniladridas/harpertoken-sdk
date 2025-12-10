@@ -40,7 +40,6 @@ type OverloadedParameters<T> =
   : T extends (...args: infer A) => unknown ? A
   : never;
 
-/* eslint-disable */
 /**
  * These imports attempt to get types from a parent package's dependencies.
  * Unresolved bare specifiers can trigger [automatic type acquisition][1] in some projects, which
@@ -115,7 +114,6 @@ type NodeFetch3RequestInit =
   | NotAny<import('../../../../../../../../../../node_modules/node-fetch').RequestInit>;
 /** @ts-ignore For users who use Deno */
 type FetchRequestInit = NonNullable<OverloadedParameters<typeof fetch>[1]>;
-/* eslint-enable */
 
 type RequestInits =
   | NotAny<UndiciTypesRequestInit>
