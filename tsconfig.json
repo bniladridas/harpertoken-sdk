@@ -28,7 +28,7 @@
     "alwaysStrict": true,
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
-    "downlevelIteration": true,
+    "types": ["jest", "node"],
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "isolatedModules": false,
